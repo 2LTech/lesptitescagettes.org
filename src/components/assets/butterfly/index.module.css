@@ -1,0 +1,19 @@
+@keyframes flutter {
+  from {
+    transform: rotateX(0);
+  }
+  to {
+    transform: rotateX(80deg);
+  }
+}
+
+.shape {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.wing {
+  transform-origin: center center;
+  animation: flutter 200ms alternate infinite;
+}
