@@ -76,7 +76,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src='/img/home/bicycle.svg' alt='img' />
+        <img src='img/home/bicycle.svg' alt='img' />
         <div className={styles.right}>
           <span>Pain</span>
           <span>Légumes</span>

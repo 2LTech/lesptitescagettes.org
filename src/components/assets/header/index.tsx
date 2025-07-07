@@ -12,12 +12,12 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.leftImages}>
         <img
-          src='/img/header/left_flower.svg'
+          src='img/header/left_flower.svg'
           alt='img'
           style={{ alignSelf: 'flex-end' }}
         />
         <img
-          src='/img/header/left_butterfly.svg'
+          src='img/header/left_butterfly.svg'
           alt='img'
           style={{ margin: 'auto' }}
         />
@@ -32,21 +32,21 @@ const Header = () => {
       </div>
       <div className={styles.rightImages}>
         <img
-          src='/img/header/right_butterfly_1.svg'
+          src='img/header/right_butterfly_1.svg'
           alt='img'
           style={{
             margin: 'auto',
           }}
         />
         <img
-          src='/img/header/right_butterfly_2.svg'
+          src='img/header/right_butterfly_2.svg'
           alt='img'
           style={{
             margin: 'auto auto 5% auto',
           }}
         />
         <img
-          src='/img/header/right_grass.svg'
+          src='img/header/right_grass.svg'
           alt='img'
           style={{ alignSelf: 'flex-end', margin: '10px' }}
         />
