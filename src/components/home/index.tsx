@@ -65,13 +65,13 @@ const Home = () => {
               </span>
               <span>Samedi</span>
               <span>
-                9<sup>h</sup> &#8212; 12<sup>h</sup>30
+                09<sup>h</sup> &#8212; 12<sup>h</sup>30
                 <br />
                 16<sup>h</sup> &#8212; 19<sup>h</sup>
               </span>
               <span>Dimanche</span>
               <span>
-                9<sup>h</sup> &#8212; 12<sup>h</sup>30
+                09<sup>h</sup> &#8212; 12<sup>h</sup>30
               </span>
             </div>
           </div>
