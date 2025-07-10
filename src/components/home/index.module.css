@@ -4,12 +4,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
+  overflow-y: auto;
 }
 
 .content {
   max-width: 1400px;
   padding: 20px;
-  margin: 20px auto 20px auto;
+  margin: 20px 0;
   display: grid;
   grid-template-columns: auto 50% auto;
   text-transform: uppercase;
@@ -24,11 +26,17 @@
   margin: auto;
 }
 
-.left,
-.right {
+.left {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding: 20px;
+  gap: 30px;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 30px;
 }
 
@@ -36,6 +44,9 @@
 .right span:nth-child(2n) {
   font-weight: normal;
   font-size: 16px;
+}
+.right span:nth-child(2n) {
+  color: #ae1c26ff;
 }
 
 .left span:nth-child(2n + 1),
@@ -64,10 +75,6 @@
   gap: 5px 20px;
 }
 
-.right :global(.red) {
-  color: #ae1c26ff;
-}
-
 .producers {
   max-width: 1400px;
   padding: 20px;
@@ -78,14 +85,25 @@
   color: #b1191d;
 }
 
-.partners {
-  max-width: 1400px;
-  padding: 20px;
-  margin: 20px auto 20px auto;
+.producersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
-.partners h1 {
-  color: #b1191d;
+.producer {
+  width: 400px;
+}
+
+.producerContent img {
+  float: left;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.producerContent p {
+  text-align: justify;
 }
 
 @media (max-width: 1050px) {
@@ -106,12 +124,19 @@
 
 @media (max-width: 700px) {
   .content {
-    gap: 20px;
+    width: unset;
+    gap: 10px;
+    padding: 10px;
     margin: 10px;
   }
 
   .left,
   .right {
-    padding: 0;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .producer {
+    width: 90%;
   }
 }

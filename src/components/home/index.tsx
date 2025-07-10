@@ -3,6 +3,7 @@ import { Caveat } from 'next/font/google'
 
 import Footer from '../assets/footer'
 import Header from '../assets/header'
+import Butterfly from '../assets/butterfly'
 
 import styles from './index.module.css'
 
@@ -11,9 +12,34 @@ const caveat = Caveat({
   subsets: ['latin'],
 })
 
-const producers = []
+const butterfies = Array.from(Array(3), (_, index) => index + 1)
 
-const partners = []
+const producers = [
+  {
+    img: 'img',
+    name: 'Producteur 1',
+    description:
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+  },
+  {
+    img: 'img',
+    name: 'Producteur 2',
+    description:
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+  },
+  {
+    img: 'img',
+    name: 'Producteur 3',
+    description:
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+  },
+  {
+    img: 'img',
+    name: 'Producteur 4',
+    description:
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+  },
+]
 
 /**
  * Home
@@ -23,11 +49,12 @@ const Home = () => {
   return (
     <main className={styles.home}>
       <Header />
+      {butterfies.map((b) => (
+        <Butterfly key={b} />
+      ))}
 
       <div className={styles.content}>
         <div className={styles.left}>
-          <span>Ancienne épicerie</span>
-          <span>Association de producteurs et de consommateurs</span>
           <div className='address'>
             <Link
               href='https://maps.app.goo.gl/4Gjr238iDqZXdecd9'
@@ -36,7 +63,7 @@ const Home = () => {
               <div className='road'>5 place des farges</div>
               <div className='city'>Treignac</div>
             </Link>
-            <Link href='tel:0601827105'>
+            <Link href='tel:0601827105' target='_blank'>
               <div className='phone'>06 01 82 71 05</div>
             </Link>
           </div>
@@ -82,26 +109,35 @@ const Home = () => {
           <span>Légumes</span>
           <span>Fruits</span>
           <span>Épicerie</span>
-          <span>Oeufs</span>
+          <span>Œufs</span>
           <span>Fromages</span>
-          <span className='red'>Viande</span>
-          <span className='red'>Miel</span>
-          <span className='red'>Sorbet</span>
-          <span className='red'>Poisson</span>
-          <span className='red'>Jus & confitures</span>
-          <span className='red'>etc.</span>
+          <span>Viandes</span>
+          <span>Miel</span>
+          <span>Sorbets</span>
+          <span>Poissons</span>
+          <span>Jus & confitures</span>
+          <span>Conserves</span>
+          <span>Pâtés</span>
+          <span>Terrines</span>
+          <span>Saucissons</span>
+          <span>etc.</span>
         </div>
       </div>
 
       {producers.length ? (
         <div className={styles.producers}>
           <h1 className={caveat.className}>Producteurs</h1>
-        </div>
-      ) : null}
-
-      {partners.length ? (
-        <div className={styles.partners}>
-          <h1 className={caveat.className}>Partenaires</h1>
+          <div className={styles.producersList}>
+            {producers.map((p) => (
+              <div key={p.name} className={styles.producer}>
+                <h3>{p.name}</h3>
+                <div className={styles.producerContent}>
+                  <img src={p.img} alt={p.name} />
+                  <p>{p.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       ) : null}
 

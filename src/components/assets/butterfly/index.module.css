@@ -7,13 +7,31 @@
   }
 }
 
-.shape {
-  position: absolute;
-  top: 100px;
-  left: 0;
+@keyframes slow {
+  0% {
+    transform: rotateX(0);
+  }
+  10% {
+    transform: rotateX(80deg);
+  }
+  20% {
+    transform: rotateX(0);
+  }
 }
 
-.wing {
+.shape {
+  position: absolute;
+  background: none;
+  border: none;
+}
+
+.shape :global(.wing) {
   transform-origin: center center;
   animation: flutter 200ms alternate infinite;
+}
+
+.shape :global(.slow) {
+  opacity: 0.5;
+  transform-origin: center center;
+  animation: slow 2000ms infinite;
 }

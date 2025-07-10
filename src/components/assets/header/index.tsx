@@ -23,8 +23,8 @@ const Header = () => {
         />
       </div>
       <div className={styles.title}>
-        <h2>Produits Locaux & Épicerie Bio</h2>
-        <h1 className={caveat.className}>Les p&apos;tites cagettes</h1>
+        <h2>Produits locaux & Épicerie bio</h2>
+        <h1 className={caveat.className}>Les P&apos;tites Cagettes</h1>
         <h3>
           <strong>Association</strong> de <strong>producteurs</strong> et de{' '}
           <strong>consommateurs</strong>
