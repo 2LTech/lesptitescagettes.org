@@ -1,5 +1,6 @@
 .footer {
-  padding: 20px;
+  width: 100%;
+  padding: 20px 0;
   color: gray;
   font-size: 14px;
   display: flex;

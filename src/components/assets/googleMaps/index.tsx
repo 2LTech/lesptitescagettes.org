@@ -16,8 +16,9 @@ export interface Formatted {
   }
 }
 
-// Place ID
+// Google API key (secured)
 const securedGoogleApiKey = 'AIzaSyCkG6N5VykY73pf711S8z3edVM0b06itoE'
+// Place ID
 const placeId = 'ChIJzfyuR8P_-EcRpyyKoKiMeLU'
 
 // Days

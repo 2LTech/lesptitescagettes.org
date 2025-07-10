@@ -94,6 +94,20 @@ const Home = () => {
         </div>
       </div>
 
+      <div className={styles.text}>
+        Text etc. bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
+        bla bla bla bla bla bla bla bla
+      </div>
+
       {producers.length ? (
         <div className={styles.producers}>
           <h1 className={caveat.className}>Producteurs</h1>
@@ -101,6 +115,7 @@ const Home = () => {
             {producers.map((p) => (
               <div key={p.name} className={styles.producer}>
                 <h3>{p.name}</h3>
+                <hr />
                 <div className={styles.producerContent}>
                   <img src={p.img} alt={p.name} />
                   <p>{p.description}</p>

@@ -5,6 +5,7 @@ import Image from 'next/image'
 const Footer = () => {
   return (
     <footer className={styles.footer}>
+      <Link href='#'>Mentions Légales</Link>
       {new Date().getFullYear()}&copy;Tous droits réservés.
       <div>
         Conçu avec{' '}
