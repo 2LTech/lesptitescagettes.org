@@ -75,6 +75,13 @@
   gap: 5px 20px;
 }
 
+.left :global(.table) :global(.button) {
+  text-transform: none;
+  padding: 10px;
+  border: 1px solid #b1191d;
+  border-radius: 5px;
+}
+
 .producers {
   max-width: 1400px;
   padding: 20px;

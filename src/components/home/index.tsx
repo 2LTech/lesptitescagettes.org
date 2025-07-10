@@ -4,6 +4,7 @@ import { Caveat } from 'next/font/google'
 import Footer from '../assets/footer'
 import Header from '../assets/header'
 import Butterfly from '../assets/butterfly'
+import GoogleMapData from '../assets/googleMaps'
 
 import styles from './index.module.css'
 
@@ -63,44 +64,13 @@ const Home = () => {
               <div className='road'>5 place des farges</div>
               <div className='city'>Treignac</div>
             </Link>
-            <Link href='tel:0601827105' target='_blank'>
-              <div className='phone'>06 01 82 71 05</div>
+            <Link href='tel:+33780248944' target='_blank'>
+              <div className='phone'>07 80 24 89 44</div>
             </Link>
           </div>
           <div className='schedules'>
-            Horaires d&apos;été
-            <div className='table'>
-              <span>Mardi</span>
-              <span>
-                16<sup>h</sup> &#8212; 19<sup>h</sup>
-              </span>
-              <span>Mercredi</span>
-              <span>
-                10<sup>h</sup> &#8212; 12<sup>h</sup>30
-                <br />
-                16<sup>h</sup> &#8212; 19<sup>h</sup>
-              </span>
-              <span>Jeudi</span>
-              <span>
-                16<sup>h</sup> &#8212; 19<sup>h</sup>
-              </span>
-              <span>Vendredi</span>
-              <span>
-                10<sup>h</sup> &#8212; 12<sup>h</sup>30
-                <br />
-                16<sup>h</sup> &#8212; 19<sup>h</sup>
-              </span>
-              <span>Samedi</span>
-              <span>
-                09<sup>h</sup> &#8212; 12<sup>h</sup>30
-                <br />
-                16<sup>h</sup> &#8212; 19<sup>h</sup>
-              </span>
-              <span>Dimanche</span>
-              <span>
-                09<sup>h</sup> &#8212; 12<sup>h</sup>30
-              </span>
-            </div>
+            Horaires
+            <GoogleMapData />
           </div>
         </div>
         <img src='img/home/bicycle.svg' alt='img' />
