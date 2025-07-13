@@ -29,7 +29,7 @@ const days = [
   'Jeudi',
   'Vendredi',
   'Samedi',
-  'Dimanche',
+  'Dimanche'
 ]
 
 /**
@@ -53,24 +53,24 @@ const formatter = (
         open: {
           hour: d.open.hour.toLocaleString('fr-FR', {
             minimumIntegerDigits: 2,
-            useGrouping: false,
+            useGrouping: false
           }),
           minute: d.open.minute.toLocaleString('fr-FR', {
             minimumIntegerDigits: 2,
-            useGrouping: false,
-          }),
+            useGrouping: false
+          })
         },
         close: {
           hour: d.close?.hour.toLocaleString('fr-FR', {
             minimumIntegerDigits: 2,
-            useGrouping: false,
+            useGrouping: false
           }),
           minute: d.close?.minute.toLocaleString('fr-FR', {
             minimumIntegerDigits: 2,
-            useGrouping: false,
-          }),
-        },
-      },
+            useGrouping: false
+          })
+        }
+      }
     }
   })
 
@@ -116,7 +116,7 @@ const GoogleMapData = () => {
   // Loader
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: securedGoogleApiKey,
+    googleMapsApiKey: securedGoogleApiKey
   })
 
   // State
@@ -132,7 +132,7 @@ const GoogleMapData = () => {
       )) as google.maps.PlacesLibrary
       const place = new Place({
         id: placeId,
-        requestedLanguage: 'fr',
+        requestedLanguage: 'fr'
       })
       await place.fetchFields({ fields: ['regularOpeningHours'] })
       const periods = place.regularOpeningHours?.periods
@@ -151,13 +151,13 @@ const GoogleMapData = () => {
    * Render
    */
   return schedule ? (
-    <div className='table'>{schedule}</div>
+    <div className="table">{schedule}</div>
   ) : (
-    <div className='table'>
+    <div className="table">
       <Link
-        className='button'
-        href='https://maps.app.goo.gl/4Gjr238iDqZXdecd9'
-        target='_blank'
+        className="button"
+        href="https://maps.app.goo.gl/4Gjr238iDqZXdecd9"
+        target="_blank"
       >
         Voir sur Google Maps
       </Link>

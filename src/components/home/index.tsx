@@ -5,12 +5,13 @@ import Footer from '../assets/footer'
 import Header from '../assets/header'
 import Butterfly from '../assets/butterfly'
 import GoogleMapData from '../assets/googleMaps'
+import Image from '../assets/image'
 
 import styles from './index.module.css'
 
 const caveat = Caveat({
   weight: '400',
-  subsets: ['latin'],
+  subsets: ['latin']
 })
 
 const butterfies = Array.from(Array(3), (_, index) => index + 1)
@@ -20,26 +21,26 @@ const producers = [
     img: 'img',
     name: 'Producteur 1',
     description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
   },
   {
     img: 'img',
     name: 'Producteur 2',
     description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
   },
   {
     img: 'img',
     name: 'Producteur 3',
     description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
   },
   {
     img: 'img',
     name: 'Producteur 4',
     description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla',
-  },
+      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
+  }
 ]
 
 /**
@@ -56,24 +57,24 @@ const Home = () => {
 
       <div className={styles.content}>
         <div className={styles.left}>
-          <div className='address'>
+          <div className="address">
             <Link
-              href='https://maps.app.goo.gl/4Gjr238iDqZXdecd9'
-              target='_blank'
+              href="https://maps.app.goo.gl/4Gjr238iDqZXdecd9"
+              target="_blank"
             >
-              <div className='road'>5 place des farges</div>
-              <div className='city'>Treignac</div>
+              <div className="road">5 place des farges</div>
+              <div className="city">Treignac</div>
             </Link>
-            <Link href='tel:+33780248944' target='_blank'>
-              <div className='phone'>07 80 24 89 44</div>
+            <Link href="tel:+33780248944" target="_blank">
+              <div className="phone">07 80 24 89 44</div>
             </Link>
           </div>
-          <div className='schedules'>
+          <div className="schedules">
             Horaires
             <GoogleMapData />
           </div>
         </div>
-        <img src='img/home/bicycle.svg' alt='img' />
+        <Image src="img/home/bicycle.svg" alt="img" />
         <div className={styles.right}>
           <span>Pain</span>
           <span>Légumes</span>
@@ -90,22 +91,16 @@ const Home = () => {
           <span>Pâtés</span>
           <span>Terrines</span>
           <span>Saucissons</span>
-          <span>etc.</span>
         </div>
       </div>
 
-      <div className={styles.text}>
-        Text etc. bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla
-        bla bla bla bla bla bla bla bla
+      <div className={`${styles.text} ${caveat.className}`}>
+        Et plein de bonnes choses pour le goût et la santé car{' '}
+        <strong>Saveur</strong> et <strong>Santé</strong>
+        sont au rendez-vous aux P&apos;tites Cagettes
+        <br />
+        Viande de bœuf Galloway, de porc et d&apos;agneau élevés en{' '}
+        <strong>plein air</strong> et <strong>bio</strong>
       </div>
 
       {producers.length ? (
@@ -117,7 +112,7 @@ const Home = () => {
                 <h3>{p.name}</h3>
                 <hr />
                 <div className={styles.producerContent}>
-                  <img src={p.img} alt={p.name} />
+                  <Image src={p.img} alt={p.name} />
                   <p>{p.description}</p>
                 </div>
               </div>
