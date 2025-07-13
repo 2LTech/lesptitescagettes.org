@@ -85,7 +85,6 @@ const getAngle = (curve: Bezier, t: number) => {
 
 /**
  * Butterfly
- * @param props Props
  * @returns Butterfly
  */
 const Butterfly = () => {
