@@ -96,8 +96,8 @@ const Home = () => {
 
       <div className={`${styles.text} ${caveat.className}`}>
         Et plein de bonnes choses pour le goût et la santé car{' '}
-        <strong>Saveur</strong> et <strong>Santé</strong>
-        sont au rendez-vous aux P&apos;tites Cagettes
+        <strong>Saveur</strong> et <strong>Santé</strong> sont au rendez-vous
+        aux P&apos;tites Cagettes
         <br />
         Viande de bœuf Galloway, de porc et d&apos;agneau élevés en{' '}
         <strong>plein air</strong> et <strong>bio</strong>
