@@ -16,31 +16,31 @@ const caveat = Caveat({
 
 const butterfies = Array.from(Array(3), (_, index) => index + 1)
 
-const producers = [
-  {
-    img: 'img',
-    name: 'Producteur 1',
-    description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
-  },
-  {
-    img: 'img',
-    name: 'Producteur 2',
-    description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
-  },
-  {
-    img: 'img',
-    name: 'Producteur 3',
-    description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
-  },
-  {
-    img: 'img',
-    name: 'Producteur 4',
-    description:
-      'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
-  }
+const producers:{img:string, name:string,description:string }[] = [
+  // {
+  //   img: 'img',
+  //   name: 'Producteur 1',
+  //   description:
+  //     'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
+  // },
+  // {
+  //   img: 'img',
+  //   name: 'Producteur 2',
+  //   description:
+  //     'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
+  // },
+  // {
+  //   img: 'img',
+  //   name: 'Producteur 3',
+  //   description:
+  //     'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
+  // },
+  // {
+  //   img: 'img',
+  //   name: 'Producteur 4',
+  //   description:
+  //     'Description ... blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla blablabla'
+  // }
 ]
 
 /**
