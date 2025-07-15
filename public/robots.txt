@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /legal
+
+# Host
+Host: https://lesptitescagettes.org
+
+# Sitemaps
+Sitemap: https://lesptitescagettes.org/sitemap.xml

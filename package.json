@@ -6,11 +6,12 @@
   "scripts": {
     "depcheck": "depcheck --ignores='@types/*'",
     "prettier": "prettier -l '**/*.{js,jsx,ts,tsx,json,md,css}'",
+    "lint": "next lint",
     "doc": "typedoc  --options .config/typedoc.js",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "sitemap": "next-sitemap --config sitemap.config.mjs"
   },
   "dependencies": {
     "next": "15.3.5",
@@ -28,6 +29,7 @@
     "depcheck": "1.4.7",
     "eslint": "9.31.0",
     "eslint-config-next": "15.3.5",
+    "next-sitemap": "^4.2.3",
     "prettier": "3.6.2",
     "typedoc": "0.28.7",
     "typescript": "5.8.3"
