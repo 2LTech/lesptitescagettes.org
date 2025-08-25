@@ -1,12 +1,12 @@
 {
   "name": "lesptitescagettes.org",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "private": true,
   "scripts": {
     "depcheck": "depcheck --ignores='@types/*,eslint,eslint-config-next'",
     "prettier": "prettier -l '**/*.{js,jsx,ts,tsx,json,md,css}'",
-    "lint": "next lint",
+    "lint": "eslint .",
     "doc": "typedoc  --options .config/typedoc.js",
     "dev": "next dev --turbopack",
     "build": "next build",
