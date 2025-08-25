@@ -16,7 +16,7 @@ const caveat = Caveat({
 
 const butterfies = Array.from(Array(3), (_, index) => index + 1)
 
-const producers:{img:string, name:string,description:string }[] = [
+const producers: { img: string; name: string; description: string }[] = [
   // {
   //   img: 'img',
   //   name: 'Producteur 1',
