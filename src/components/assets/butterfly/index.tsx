@@ -194,11 +194,13 @@ const Butterfly = () => {
   // Colors
   useEffect(() => {
     const num = Math.floor(Math.random() * 3)
+    // eslint-disable-next-line
     setColors(colorsShapes[num])
   }, [])
 
   // Width
   useEffect(() => {
+    // eslint-disable-next-line
     handleResize()
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
