@@ -74,7 +74,11 @@ const Home = () => {
             <GoogleMapData />
           </div>
         </div>
-        <Image src="img/home/bicycle.svg" alt="img" />
+        <Image
+          src="img/home/bicycle.svg"
+          alt="img"
+          style={{ display: 'flex' }}
+        />
         <div className={styles.right}>
           <span>Pain</span>
           <span>Légumes</span>
