@@ -125,6 +125,16 @@ const Home = () => {
         </div>
       ) : null}
 
+      <div className={`${styles.text} ${caveat.className}`}>
+        <Link
+          href="https://www.facebook.com/profile.php?id=61587538262303&locale=fr_FR"
+          target="_blank"
+        >
+          <Image src="/img/home/facebook.png" alt="" width={16} />
+          Venez nous voir sur Facebook
+        </Link>
+      </div>
+
       <Footer />
     </main>
   )

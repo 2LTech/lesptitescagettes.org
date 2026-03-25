@@ -5,6 +5,8 @@ import { SyntheticEvent, useCallback } from 'react'
 export interface Props {
   src: string
   alt: string
+  width?: number
+  height?: number
   style?: React.CSSProperties
 }
 
@@ -30,7 +32,13 @@ const Image: React.FunctionComponent<Props> = (props) => {
    */
   return (
     <picture style={props.style}>
-      <img src={props.src} alt={props.alt} onError={onError} />
+      <img
+        src={props.src}
+        alt={props.alt}
+        width={props.width}
+        height={props.height}
+        onError={onError}
+      />
     </picture>
   )
 }
