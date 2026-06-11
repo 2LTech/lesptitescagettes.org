@@ -48,8 +48,7 @@ const setPoints = (
   const points = []
 
   if (lastPoint) {
-    points.push(lastPoint.x)
-    points.push(lastPoint.y)
+    points.push(lastPoint.x, lastPoint.y)
   }
 
   while (points.length < 4 * 2)
@@ -135,8 +134,8 @@ const Butterfly = () => {
     lastPoint.current = null
     clearTransform()
     setSize({
-      width: global.window ? global.screen.width : 0,
-      height: global.window ? global.screen.height : 0
+      width: globalThis.window ? globalThis.screen.width : 0,
+      height: globalThis.window ? globalThis.screen.height : 0
     })
   }, [clearTransform])
 
@@ -194,13 +193,13 @@ const Butterfly = () => {
   // Colors
   useEffect(() => {
     const num = Math.floor(Math.random() * 3)
-    // eslint-disable-next-line
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setColors(colorsShapes[num])
   }, [])
 
   // Width
   useEffect(() => {
-    // eslint-disable-next-line
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     handleResize()
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)

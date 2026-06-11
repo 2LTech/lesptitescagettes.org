@@ -47,7 +47,7 @@ const formatter = (
     const day = d.open.day - 1 < 0 ? 6 : d.open.day - 1
     const key = d.open.hour < 12 ? 'morning' : 'afternoon'
     byDay[day] = {
-      ...(byDay[day] ?? {}),
+      ...byDay[day],
       day,
       [key]: {
         open: {
