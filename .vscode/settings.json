@@ -12,5 +12,9 @@
     "latex",
     "plaintext",
     "typescriptreact"
-  ]
+  ],
+  "sonarlint.connectedMode.project": {
+    "connectionId": "2ltech",
+    "projectKey": "2LTech_lesptitescagettes.org"
+  }
 }
